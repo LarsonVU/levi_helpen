@@ -132,7 +132,6 @@ def main():
     tab1, tab2, tab3 = st.tabs(["Create Model", "Assign Labels", "Assign Sentiments"])
 
     basis_df = pd.read_excel("digitale wereld submap.xlsx")
-    basis_df = basis_df.dropna(subset = ['@digitaal_watgaatergoed_categorie', '@digitaal_watgaatergoedd', "@digitaal_watkanerbeterr" , "@digitaal_watkanerbeter_categorie"])
 
     # Tab 1: Train model
     with tab1:
